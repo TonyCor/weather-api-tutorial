@@ -75,7 +75,7 @@
 				function getMeteoLongueuil(){
 					jQuery(document).ready(function($) {
 						$.ajax({
-						  url : "https://api.wunderground.com/api/aa0f9da35262fe53/geolookup/conditions/lang:FC/q/Quebec/Longueuil.json",
+						  url : "https://api.wunderground.com/api/be61c394ef9f9adc/geolookup/conditions/lang:FC/q/Quebec/Longueuil.json",
 						  dataType : "jsonp",
 						  success : function(parsed_json) {
 							var location = parsed_json['location']['city'];
@@ -95,9 +95,9 @@
 				function getMeteoMiami(){
 					jQuery(document).ready(function($) {
 						$.ajax({
-						  url : "https://api.wunderground.com/api/aa0f9da35262fe53/geolookup/conditions/lang:FC/q/US/Miami.json",
+						  url : "https://api.wunderground.com/api/be61c394ef9f9adc/geolookup/conditions/lang:FC/q/US/Miami.json",
 						  dataType : "jsonp",
-						  success : function(parsed_json) {
+						  success : function(parsed_json) {					
 							var location = parsed_json['location']['city'];
 							var temp_c = parsed_json['current_observation']['temp_c'];
 							var uneimage = parsed_json['current_observation']['icon_url'];
